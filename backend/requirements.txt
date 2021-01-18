@@ -1,0 +1,15 @@
+# Django
+django==2.2.13
+djangorestframework==3.12.2
+
+# Network & Utils
+requests==2.23.0
+
+# Cryptography & Security
+pyjwt==1.7.1
+jwcrypto==0.7
+
+# Tests
+pytest==6.2.1
+pytest-django==4.1.0
+pytest-mock==3.5.1

@@ -1,0 +1,2 @@
+class MyInfoClientError(Exception):
+    pass
