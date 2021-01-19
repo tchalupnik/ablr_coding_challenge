@@ -7,6 +7,7 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.x509 import load_pem_x509_certificate
 from django.utils.encoding import force_bytes, force_text
 from jwcrypto import jwe, jwk
+
 from myinfo import settings
 
 log = logging.getLogger(__name__)

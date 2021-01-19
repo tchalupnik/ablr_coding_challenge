@@ -3,6 +3,7 @@ from json import JSONDecodeError
 from urllib.parse import quote, urlencode
 
 import requests
+
 from myinfo import settings
 from myinfo.security import generate_authorization_header
 
