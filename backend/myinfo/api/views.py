@@ -1,5 +1,3 @@
-import logging
-
 from django.utils.datastructures import MultiValueDictKeyError
 from jwt import DecodeError, ExpiredSignatureError
 from rest_framework.request import Request
@@ -14,8 +12,6 @@ from .exceptions import (
     MyInfoAPIException,
     TokenNotProvidedAPIException,
 )
-
-logger = logging.getLogger(__name__)
 
 
 class PersonView(APIView):
@@ -44,8 +40,7 @@ class ReceiveTokenAPIView(APIView):
 
         try:
             access_token = receive_access_token(token=token)
-        except MyInfoClientError as e:
-            logger.exception(e)
+        except MyInfoClientError:
             raise MyInfoAPIException
 
         return Response(access_token)
