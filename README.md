@@ -51,6 +51,14 @@ If you have any questions about this criteria please ask.
     ```
 6. Go on `localhost:3000`
 
+### Run tests
+1. First two steps the same as in `Run without docker`
+2. In console:
+    ```
+    cd backend
+    pip install -r requirements.txt
+    pytest
+    ```
 
 ## Submission
 
